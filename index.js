@@ -12,7 +12,7 @@ function createRecipe() {
 
 function displayEditForm() {
   var editFormTemplate = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML)
-  document.getElementsByTagName("main")[0].innerHTML = editFormTemplate(recipeValue())
+  document.getElementsByTagName("main")[0].innerHTML = editFormTemplate(recipeValueUpdate())
 }
 
 function updateRecipe() {
