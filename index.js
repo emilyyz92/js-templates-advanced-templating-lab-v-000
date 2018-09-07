@@ -7,7 +7,7 @@ function createRecipe() {
   var recipeTemplate = Handlebars.compile(document.getElementById("recipe-template").innerHTML)
   var recipe = recipeValueCreate()
   var result = recipeTemplate(recipe)
-  document.getElementsByTagName("main")[0].innerHTML = result
+  document.getElementById("main").innerHTML = result
 }
 
 function displayEditForm() {
