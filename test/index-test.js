@@ -74,8 +74,8 @@ describe('Handlebars Templates Lab', function() {
 
     describe('createRecipe', function() {
       it('renders the recipe template', function() {
-        init()
         debugger;
+        init()
         var spy = expect.spyOn(window.Handlebars, "compile").andCallThrough()
         createRecipe()
         expect(spy).toHaveBeenCalledWith(document.getElementById("recipe-template").innerHTML)
